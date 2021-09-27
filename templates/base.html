@@ -1,7 +1,64 @@
 <html lang="en">
 
 <head>
+    <title>Reconocimiento de caracter</title>
+    <style>
+      body {
+        margin: 0;
+        background: url('https://cdn.teamandroid.com/wp-content/uploads/2018/08/google-pixel3-wallpaper-005.jpg');
+
+        background-position: right top;
+        background-repeat: no-repeat;
+        background-size: 130%;
+	
+      }
+      h1 {
+        position: absolute;
+        bottom: 70%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        margin: 0;
+        padding: 0;
+        font-size: 100px;
+        font-family: Noto, serif;
+        color: #ffffff;
+        text-shadow: 2px 2px #000000;
+        text-transform: uppercase;
+        transition-duration: 1s;
+        -webkit-background-clip: text;
+      }
+      h1:hover {
+        letter-spacing: 10px;
+      }
+      .text {
+        color: #eeeeee;
+        font-weight: bold;
+        border: 2px solid #cccccc;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 80%;
+        padding: 10px;
+        text-align: center;
+      }
+      .button {
+        display: inline-block;
+        padding: 10px 20px;
+        text-align: center;
+        text-decoration: none;
+        color:  #ffffff;
+        background-color:  #83b3b9;
+        border-radius: 6px;
+        outline: none;
+      }
+
+    </style>
     <meta charset="UTF-8">
+    <meta http-equiv="Expires" content="0">
+    <meta http-equiv="Last-Modified" content="0">
+    <meta http-equiv="Cache-Control" content="no-cache, mustrevalidate">
+    <meta http-equiv="Pragma" content="no-cache">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>CVTwVC Prototipo</title>
@@ -17,27 +74,32 @@
 
 <body>
 
-  <style>
-    .texto {
-    	font-family: 'PT Serif', serif;
-    	}
-  </style> 
-  <nav class="navbar  navbar-dark bg-primary">
+
+  <nav class="navbar navbar-light" style="background-color:  #338ea7    ;">
         <div class="container">
-            <a class="navbar-brand" href="#">CVTwVC Prototipo</a>
-            <button class="btn btn-outline-dark my-2 my-sm-0" type="submit">Ayuda</button>
-            <button class="btn btn-outline-dark my-2 my-sm-0" type="submit">Informe</button>
+            <a class="navbar-brand" href="#">PROTOTIPO</a>
+	    <a class="button" href="https://www.comet.ml/mfguarin/visitas-tecnicas/view/ml782BpO7Jk4zs82NnYI3eMHp">COMET</a>
+	    <a class="button" href="https://arturo-duque.atlassian.net/jira/software/projects/AM/boards/4/roadmap">JIRA</a>
+       	    <a class="button" href="https://github.com/maria-ramirez/Proyecto-Desarrollo-de-IA">GITHUB</a>
+	    
         </div>
     </nav>
 
-  
-    <div class="container">
-        <div id="content" style="margin-top:3em">{% block content %}{% endblock %}</div>
+    
+    <div class="text">
+      <h1>Reconocimiento de placa de predio</h1>
+      <h2>Usando vision computacional</h2>
+      <p>Alba Ramirez, Milton Guarin</p>
     </div>
-</body>
+    <div class="container">
+        <div id="content" style="margin-top:1em">{% block content %}{% endblock %}</div>
+    </div>
 
+</body>
 <footer>
-    <script src="{{ url_for('static', filename='js/main.js') }}" type="text/javascript"></script>    
+    
+	<script src="{{ url_for('static', filename='js/main.js') }}" type="text/javascript"></script>    
+    
 </footer>
 
 </html>
