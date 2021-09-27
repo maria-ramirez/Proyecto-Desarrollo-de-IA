@@ -30,7 +30,7 @@ Todas las dependencias necesarias se encuentran instaladas en el archivo  **[app
 ```
 python app_funciona.py
 ```
-3. Por último en el browser de su navegador colocar la url que te arroga para probar su funcionamiento  
+3. Por último en el browser de su navegador colocar la url que te arroja para probar su funcionamiento  
 
 ```
 http://127.0.0.1:5000/
